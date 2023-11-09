@@ -1,7 +1,7 @@
 $(document).ready(function(){
   console.log('ready');
 
-// Submit event:
+// Submit event mockup:
   document.getElementById("displayBtn").onclick = function() {  
     displayInput()  
     };  
