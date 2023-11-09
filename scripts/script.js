@@ -1,6 +1,7 @@
 $(document).ready(function(){
   console.log('ready');
 
+// Submit event:
   document.getElementById("displayBtn").onclick = function() {  
     displayInput()  
     };  
@@ -11,6 +12,7 @@ $(document).ready(function(){
    );
   };
   
+  // Load Data (hardcoded bc loading from json gave me headaches)
   document.getElementById("loadBtn").onclick = function() {
     loadData()
   };
@@ -21,6 +23,7 @@ $(document).ready(function(){
     document.getElementById('aplEmail').value = 'Ljames23@icloud.com'
   };
 
+  // Dependent input from radio buttons
   $("input[type=radio][name=shippingLocation]").on("change", function () {
     let addy = $("input[name=shippingLocation]:checked").val();
     console.log(addy)
